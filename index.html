@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<style>
+
+@keyframes spin {
+    from {
+        transform:rotate(0deg);
+    }
+    to {
+        translate: 1010px; rotate: 3260deg;
+    }
+}
+
+#myCanvas {
+    animation-name: spin;
+  animation-duration: 5000ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear; 
+}
+
+</style>
+
+
+<canvas id="myCanvas" width="100" height="100" style="border:1px solid #d3d3d3;">
+Your browser does not support the HTML canvas tag.</canvas>
+
+<script>
+var c = document.getElementById("myCanvas");
+var ctx = c.getContext("2d");
+ctx.font = "30px Arial";
+ctx.fillText("i",10,50);
+</script>
+
+</body>
+</html>
+
+
